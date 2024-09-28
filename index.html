@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Status Page Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">MyStatus</div>
+    <div class="header-buttons">
+      <button>RSS Feed</button>
+      <button>Support</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="status-overview">
+      <div class="status-main">
+        <div class="status-icon">
+          <img src="check-circle.svg" alt="Operational" />
+        </div>
+        <div class="status-text">
+          <h1>Operational</h1>
+          <a href="#">Incident History</a>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button class="active">Uptime</button>
+        <button>Performance</button>
+      </div>
+
+      <div class="timeframe">
+        <button>7d</button>
+        <button>30d</button>
+        <button class="active">90d</button>
+      </div>
+    </section>
+
+    <section class="status-list">
+      <div class="status-item">
+        <h3>MyService - Americas</h3>
+        <div class="status-details">
+          <span class="status operational">Operational</span>
+          <span class="uptime">99.999% Uptime</span>
+        </div>
+        <div class="uptime-bar">
+          <!-- Simulate uptime chart here -->
+          <div class="uptime-fill" style="width: 99%;"></div>
+        </div>
+      </div>
+
+      <div class="status-item">
+        <h3>MyService - Europe</h3>
+        <div class="status-details">
+          <span class="status operational">Operational</span>
+          <span class="uptime">99.998% Uptime</span>
+        </div>
+        <div class="uptime-bar">
+          <div class="uptime-fill" style="width: 99.8%;"></div>
+        </div>
+      </div>
+
+      <div class="status-item">
+        <h3>MyService - Asia</h3>
+        <div class="status-details">
+          <span class="status operational">Operational</span>
+          <span class="uptime">99.999% Uptime</span>
+        </div>
+        <div class="uptime-bar">
+          <div class="uptime-fill" style="width: 99.99%;"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 MyStatus - All Rights Reserved</p>
+  </footer>
+</body>
+</html>
